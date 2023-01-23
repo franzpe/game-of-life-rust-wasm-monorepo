@@ -8,7 +8,10 @@ node_modules
 */build
 /.pnp
 .pnp.js
+
+#packages
 packages/wasm/target
+packages/wasm/dist
 
 # testing
 /coverage
