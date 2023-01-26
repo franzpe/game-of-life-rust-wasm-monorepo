@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import useWasm from './hooks/useWasm'
+import UniverseGame from './UniverseGame'
 
 import './App.css'
 
 function App() {
   const wasm = useWasm()
-  const [val, setValue] = useState('')
 
   if (!wasm) {
     return 'LOADING'
@@ -13,14 +12,8 @@ function App() {
 
   return (
     <div>
-      <h1>rust monorepo wasm demo</h1>
-      <label htmlFor="name">Your name?</label>
-      <input
-        value={val}
-        onChange={event => setValue(event.target.value)}
-        id="name"
-      />
-      <h2>Greeting from wasm: {!wasm ? 'Loading...' : wasm.greet(val)}</h2>
+      <h1>Rust wasm in monorepo - Game of life</h1>
+      <UniverseGame universe={wasm.Universe.new()} wasm={wasm} />
     </div>
   )
 }

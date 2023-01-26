@@ -1,4 +1,6 @@
-# Hello, World!
+# Wasm
+
+For more info see https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm
 
 You can build the example locally with:
 
