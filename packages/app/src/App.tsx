@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <h1>Rust wasm in monorepo - Game of life</h1>
-      <UniverseGame universe={wasm.Universe.new()} wasm={wasm} />
+      <UniverseGame universe={wasm.Universe.new(64, 48)} wasm={wasm} />
     </div>
   )
 }
