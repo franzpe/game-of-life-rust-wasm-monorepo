@@ -1,5 +1,5 @@
 import useWasm from './hooks/useWasm'
-import UniverseGame from './UniverseGame'
+import UniverseGame from './game/UniverseGame'
 
 import './App.css'
 
@@ -12,8 +12,12 @@ function App() {
 
   return (
     <div>
-      <h1>Rust wasm in monorepo - Game of life</h1>
-      <UniverseGame universe={wasm.Universe.new(64, 48)} wasm={wasm} />
+      <h1>John Conway's Game of life</h1>
+      <UniverseGame universe={wasm.Universe.new(64, 32)} wasm={wasm} fps={20} />
+      <footer>
+        By <a href="https://github.com/franzpe">Frank Pobocek</a> @ WASM, Rust,
+        React, Monorepo
+      </footer>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 
 import { Universe } from 'wasm'
-import { Wasm } from './hooks/useWasm'
+import { Wasm } from '../hooks/useWasm'
 
 type Props = {
   universe: Universe
@@ -9,7 +9,7 @@ type Props = {
   fps?: number
 }
 
-const FPS = 45
+const FPS = 60
 
 const UniverseGame = ({ universe, fps = FPS }: Props) => {
   const preRef = useRef<HTMLPreElement>(null)
