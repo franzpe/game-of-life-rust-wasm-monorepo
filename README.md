@@ -17,6 +17,18 @@ The initial pattern constitutes the seed of the system. The first generation is 
 
 For in depth explenation of the rules please see [wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
+## About tech stack
+
+- **WebAssembly (abbreviated Wasm)** is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.
+
+- **Rust** is a multi-paradigm, high-level, general-purpose programming language. Rust emphasizes performance, type safety, and concurrency. Rust enforces memory safety—that is, that all references point to valid memory—without requiring the use of a garbage collector or reference counting present in other memory-safe languages. To simultaneously enforce memory safety and prevent concurrent data races, Rust's "borrow checker" tracks the object lifetime of all references in a program during compilation.
+
+- **wasm-pack** helps you build rust-generated WebAssembly packages that you could publish to the npm registry, or otherwise use alongside any javascript packages in workflows that you already use, such as webpack. [link](https://github.com/rustwasm/wasm-pack)
+
+- A **monorepo** is a single repository containing multiple distinct projects, with well-defined relationships.
+
+- **react** is a javascript library for building UIs.
+
 ## Usage
 
 ```
